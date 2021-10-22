@@ -1,0 +1,7 @@
+{
+	"identityServer": "https://acom-dev-env-webapp-security.azurewebsites.net",
+	"tokenServiceUrl": "https://prod-18.southeastasia.logic.azure.com:443/workflows/275cca5dc658494c82f53bb6bc4f8757/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=ptQETsNJwlkx5TQZSgMFH9y0Hie8rEB9eXTdUqsESWM",
+	"apiServer": "http://localhost:5800",
+	"MediaServerUrl": "http://localhost:5900"
+
+}
