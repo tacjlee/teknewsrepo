@@ -1,0 +1,18 @@
+<div style="text-align: center;">
+  <h3>Detail Page</h3>
+</div>
+<div fxLayout="column" fxLayoutAlign="center center" *ngIf="item" >
+  <div>
+    <img id="login-img" src="{{item.coverImageUrl}}" style="max-height: 300px; max-width: 400px;" />
+  </div>
+  <div style="padding: 10px">
+    <span style="width: 100px;">Url: </span> {{item.url}}  
+  </div>
+  <div style="padding: 10px">
+    <span style="width: 100px;">Content: </span> {{item.content}}  
+  </div>
+</div>
+
+<div fxLayout="row" fxLayoutAlign="center center" style="width: 100%;">
+  <button mat-button class="mat-primary mat-raised-button" [routerLink]="['/home']" style="background-color: #2079bf;"> Back... </button>
+</div>

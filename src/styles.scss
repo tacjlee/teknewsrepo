@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+/*https://medium.com/@ismapro/first-steps-with-angular-cli-and-angular-material-5a90406e9a4*/
+
+@import "~@angular/material/theming";
+//@import url('//fonts.googleapis.com/icon?family=Material+Icons'); //Online Material Icons
+@import "~ngx-toastr/toastr.css";
+
+@include mat-core();
+
+$font-path: "../assets/fonts";
+$primary: mat-palette($mat-indigo);
+$accent: mat-palette($mat-pink, A200, A100, A400);
+$warn: mat-palette($mat-red, 500);
+
+$config: mat-typography-config();
+
+$theme: mat-light-theme($primary, $accent, $warn);
+
+@include angular-material-theme($theme);
+
+body {
+  font-family: mat-font-family($config);
+  font-weight: normal;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: normal;
+}

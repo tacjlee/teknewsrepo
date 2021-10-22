@@ -1,0 +1,76 @@
+{
+    "compileOnSave": false,
+    "compilerOptions": {
+        "baseUrl": "./",
+        "outDir": "./dist/out-tsc",
+        "sourceMap": true,
+        "declaration": false,
+        "downlevelIteration": true,
+        "experimentalDecorators": true,
+        "module": "esnext",
+        "moduleResolution": "node",
+        "importHelpers": true,
+        "target": "es2015",
+        "typeRoots": [
+            "node_modules/@types"
+        ],
+        "lib": [
+            "es2018",
+            "dom"
+        ],
+        "paths": {
+            "@services/*": [
+                "src/app/services/*"
+            ],
+            "@editor-services/*": [
+                "src/app/modules/editor/services/*"
+            ],
+            "@environment": [
+                "src/environments/environment.ts"
+            ],
+            "@auth": [
+                "src/app/modules/auth/auth.service"
+            ],
+            "@config": [
+                "src/app/modules/config/config.service"
+            ],
+            "@controls/*": [
+                "src/app/controls/*"
+            ],
+            "@interfaces/*": [
+                "src/app/interfaces/*"
+            ],
+            "@modules/*": [
+                "src/app/modules/*"
+            ],
+            "@cms-modules/*": [
+                "src/app/cms-modules/*"
+            ],
+            "@jsons/*": [
+                "src/app/jsons/*"
+            ],
+            "@components/*": [
+                "src/app/modules/components/*"
+            ],
+            "@directives/*": [
+                "src/app/directives/*"
+            ],
+            "@pipes/*": [
+                "src/app/pipes/*"
+            ],
+            "@validations/*": [
+                "src/app/validations/*"
+            ],
+            "@core/*": [
+                "src/app/core/*"
+            ],
+            "@svg/*": [
+                "src/assets/svg/*"
+            ]
+        }
+    },
+    "angularCompilerOptions": {
+        "fullTemplateTypeCheck": true,
+        "strictInjectionParameters": true
+    }
+}
