@@ -1,5 +1,5 @@
 
-<div layout="column" class = "contener" style="padding: 0 20px; position: relative; background-color: #48bbd9; color: white;">
+<div layout="column" class = "contener" style="padding: 0 20px; position: relative; background-color: #4da8dd; color: white;">
 	<div style="padding: 15px; text-align: center;">
 		<span class="news-header">What is Hacker News???</span>
 	</div>
@@ -10,13 +10,13 @@
 	</div>	
 </div>
 
-<div id="headerContainer" fxLayout="row wrap" fxLayoutAlign="center center" 
+<div class="container" fxLayout="row wrap" fxLayoutAlign="center center" 
 	style="background-color: whitesmoke; padding: 10px; ">
 	<div *ngFor="let item of hackerNews" class="feature-card">
 		<div fxLayout="column" fxLayoutAlign="start center">
 			<div>
-				<img *ngIf="item.url" src="{{item.url}}"   style="max-height: 150px; max-width: 400px; "/>
-				<img *ngIf="!item.url" src="assets/images/empty.png"  style="max-height: 150px; " />
+				<img *ngIf="item.url" src="{{item.url}}"   style="max-height: 130px; max-width: 310px; "/>
+				<img *ngIf="!item.url" src="assets/images/empty.png"  style="max-height: 130px; " />
 				
 			</div>
 			<!-- <div class="feature-name">
@@ -32,5 +32,5 @@
 	</div>
 </div>
 <div class="layout-footer">
-	<span style="margin-left: 20px;">Designed by: tacjlee@gmail.com</span>
+	<span style="margin-left: 20px; color: white;">Designed by: tacjlee@gmail.com</span>
 </div>
