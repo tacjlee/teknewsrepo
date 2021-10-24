@@ -1,3 +1,6 @@
+<div *ngIf="isLoading" class="news-progressbar">
+	<p-progressBar mode="indeterminate"></p-progressBar>
+</div>
 
 <div layout="column" class = "contener" style="padding: 0 20px; position: relative; background-color: #4da8dd; color: white;">
 	<div style="padding: 15px; text-align: center;">
@@ -8,6 +11,8 @@
 		It is run by Paul Graham's investment fund and startup incubator, Y Combinator. 
 		In general, content that can be submitted is defined as "anything that gratifies one's intellectual curiosity.
 	</div>	
+	
+
 </div>
 
 <div class="container" fxLayout="row wrap" fxLayoutAlign="center center" 
@@ -19,9 +24,7 @@
 				<img *ngIf="!item.url" src="assets/images/empty.png"  style="max-height: 130px; " />
 				
 			</div>
-			<!-- <div class="feature-name">
-				{{item.subtitle | uppercase}}
-			</div> -->
+			
 			<a href class="feature-name" [routerLink]="['/newsdetail', item.subtitle]"> {{item.subtitle | uppercase}} </a>
 			<div style="font-size: 13px;">{{item.description}}</div>
 		</div>

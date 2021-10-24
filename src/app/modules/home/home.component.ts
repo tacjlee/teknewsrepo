@@ -23,6 +23,7 @@ export class HomeComponent implements OnInit, OnDestroy {
     subLoadData: Subscription;
     subInitData: Subscription;
     subLoadDetailData: Subscription;
+    isLoading: boolean = false;
     ngOnInit(): void {
         this.onLoadData(this.pageIndex);
     }
@@ -35,6 +36,7 @@ export class HomeComponent implements OnInit, OnDestroy {
     }
 
     onLoadData(pageIndex: number){
+        this.isLoading = true;
         this.subLoadData = this.hackerDataService.getArticles(pageIndex)
         .subscribe(res=>{
             const data: any = res.data;
@@ -60,9 +62,11 @@ export class HomeComponent implements OnInit, OnDestroy {
                     })
                 }
             }
+            this.isLoading = false;
         },
         err=>{
-            this.alertService.showError('Could not load Hacker News')
+            this.alertService.showError('Could not load Hacker News');
+            this.isLoading =false;
         })
     }
 
